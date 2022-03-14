@@ -1,0 +1,26 @@
+{
+  "name": "mern-chat-app",
+  "version": "1.0.0",
+  "description": "MERN stack chat application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abriilo/MERN-Chat-App.git"
+  },
+  "keywords": [
+    "MERN",
+    "Chat"
+  ],
+  "author": "Abraham Mitiku",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abriilo/MERN-Chat-App/issues"
+  },
+  "homepage": "https://github.com/abriilo/MERN-Chat-App#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

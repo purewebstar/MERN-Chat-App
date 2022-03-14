@@ -1,1 +1,1 @@
-"# MERN-Chat-App" 
+# MERN Chat Application
