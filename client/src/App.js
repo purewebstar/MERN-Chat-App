@@ -5,12 +5,36 @@
  */
 // -----------------------------------------------------------------
 import React from 'react';
+import { useRoutes} from "react-router-dom";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import routes from './routes/routes';
+import {getLocalStorage} from './utils/Storage';
+import {defaultTheme, chillTheme} from './constants/theme';
 
-const App = () =>{
+let siteTheme = ( getLocalStorage('theme'))?chillTheme: defaultTheme;
+
+const theme = createTheme({
+  palette: {
+   primary: {
+     main: siteTheme.PRIMARY.MAIN,
+     dark: siteTheme.PRIMARY.DARK,
+     light: siteTheme.PRIMARY.LIGHT,
+   }, 
+   secondary: {
+     main: siteTheme.SECONDARY.MAIN,
+     dark: siteTheme.SECONDARY.DARK,
+     light: siteTheme.SECONDARY.LIGHT,
+   },
+  },
+});
+
+const App = () =>{ 
+  let elements = useRoutes(routes);
+
   return (
-    <>
-     <h1>Chat application</h1>
-    </> 
+  <ThemeProvider theme={theme}>
+   { elements }
+  </ThemeProvider>
   );
 }
 
