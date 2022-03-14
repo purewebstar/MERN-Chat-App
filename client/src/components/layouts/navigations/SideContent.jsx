@@ -5,13 +5,18 @@
  */
 // -----------------------------------------------------------------
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Profile = () => {
+const SideContent = ({}) => {
     return (
-        <div>
-            
-        </div>
+        <>
+        
+        </>
     );
 };
 
-export default Profile;
+SideContent.propTypes = {
+
+};
+
+export default SideContent;

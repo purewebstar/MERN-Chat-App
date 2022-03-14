@@ -25,6 +25,11 @@ const theme = createTheme({
      dark: siteTheme.SECONDARY.DARK,
      light: siteTheme.SECONDARY.LIGHT,
    },
+   warning: {
+    main: siteTheme.WARNING.MAIN,
+    dark: siteTheme.WARNING.DARK,
+    light: siteTheme.WARNING.LIGHT,
+  },
   },
 });
 

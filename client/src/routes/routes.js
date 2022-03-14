@@ -20,7 +20,6 @@ import Verify from '../components/views/public/auth/Verify';
  * Authorized pages [views] should be imported here and add with private view categories
  */
 import Dashboard from '../components/views/private/dashboard/Dashboard';
-import Profile from '../components/views/private/profile/Profile';
 
 
 /**
@@ -86,8 +85,8 @@ children: [
     children: [
         { index: true, element: <PrivateRoute><Dashboard /></PrivateRoute> },
         {
-            path: "/user/profile",
-            element: <PrivateRoute><Profile /></PrivateRoute>,
+            path: "/user/dashboard",
+            element: <PrivateRoute><Dashboard /></PrivateRoute>,
         }, 
     ],
 },
