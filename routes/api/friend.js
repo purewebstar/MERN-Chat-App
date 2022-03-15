@@ -28,15 +28,15 @@ const router = express.Router();
  *  Friends route api's
  */
 // create new friend request
-router.post('/auth/create', checkAuthorized, createFriend.newRequest); // authorized router
+router.post('/auth/create/:id', checkAuthorized, createFriend.newRequest); // authorized router
 // accept friend request
-router.post('/auth/accept', checkAuthorized, createFriend.acceptRequest); // authorized router
+router.post('/auth/accept/:id', checkAuthorized, createFriend.acceptRequest); // authorized router
 // read friend list
 router.get('/auth/read', checkAuthorized, readFriend.list); // authorized router
 // remove friend list
-router.delete('/auth/list', checkAuthorized, removeFriend.list); // authorized router
+router.delete('/auth/list/:id', checkAuthorized, removeFriend.list); // authorized router
 // remove friend request
-router.delete('/auth/request', checkAuthorized, removeFriend.request); // authorized router
+router.delete('/auth/request/:id', checkAuthorized, removeFriend.request); // authorized router
 
 
 module.exports = router; 
