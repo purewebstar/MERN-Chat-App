@@ -19,6 +19,11 @@ const passport = require('passport');
 const app = express();
 const server = require('http').createServer(app);
 const mongoose = require('mongoose');
+// api routes
+const routes = require('./routes');
+// schedule jobs
+const VerifyEmailJobs = require('./schedules/VerifyEmailJobs');
+const AccountJobs = require('./schedules/AccountJobs');
 // socket
 const socket = require('./socket');
 const initMongoDb = require('./config/initMongoDb');
@@ -35,6 +40,13 @@ app.use(
     frameguard: true 
   })
 ); 
+
+// schedule jobs
+VerifyEmailJobs(app);
+AccountJobs(app);
+// api routes
+app.use(routes);
+
 app.use(compression()); 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));

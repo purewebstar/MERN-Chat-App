@@ -29,12 +29,6 @@ const readNotification = {
         const User_id = req.user.payload.user_id;
         const notification =  await Notification.find({to: User_id}).sort({createdAt: -1}).clone();
         return res.status(200).json({data: notification, status:true});
-    },
-    byId: async(req, res)=>{
-        const User_id = req.user.payload.user_id;
-        const id = req.params.id;
-        const notification =  await Notification.find({_id:id, to: User_id}).sort({createdAt: -1}).clone();
-        return res.status(200).json({data: notification, status:true});
     }
 }
 // update Notification
