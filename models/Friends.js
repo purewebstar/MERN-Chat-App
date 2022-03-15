@@ -22,6 +22,12 @@ const FriendsSchema = mongoose.Schema({
             ref: 'User'
         }
     }],
+    newFriendRequest: [{
+        user: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'User'
+        }
+    }],
 },{
     timestamps: true
 })
