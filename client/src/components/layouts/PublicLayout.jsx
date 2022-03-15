@@ -11,8 +11,6 @@
  */
  import React from 'react';
  import {Outlet} from 'react-router-dom';
- import Sidebar from './navigations/Sidebar';
- import Bottombar from './navigations/Bottombar'
  const PublicLayout = () =>{
  
    return (
@@ -25,8 +23,7 @@
       * 
       */
      }
-        <Sidebar/>
-        <Bottombar/>
+
      {
      /**
       * Outlet, contains all publiclayout {children},

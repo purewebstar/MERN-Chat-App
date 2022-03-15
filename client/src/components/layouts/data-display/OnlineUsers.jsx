@@ -7,16 +7,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const SideContent = ({}) => {
+const OnlineUsers = ({}) => {
     return (
-        <>
-        
-        </>
+        <div>
+            
+        </div>
     );
 };
 
-SideContent.propTypes = {
+OnlineUsers.propTypes = {
 
-};
+}
 
-export default SideContent;
+export default OnlineUsers;

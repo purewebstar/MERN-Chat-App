@@ -16,10 +16,15 @@ export const defaultTheme = {
         LIGHT: `#eb7333`,
     },
     WARNING: {
+        MAIN: `#bdbdbd`,
+        DARK: `#bdbdbd`,
+        LIGHT: `#bdbdbd`,
+    },
+    INFO: {
         MAIN: `#ffffff`,
         DARK: `#ffffff`,
         LIGHT: `#ffffff`,
-    }
+    },
 }
 
 export const chillTheme = {
@@ -29,13 +34,18 @@ export const chillTheme = {
         LIGHT: `#1c2331`,
     },
     SECONDARY: {
-        MAIN: `#0277bd`,
-        DARK: `#015384`,
-        LIGHT: `#3492ca`,
+        MAIN: `#2196f3`,
+        DARK: `#2196f3`,
+        LIGHT: `#4dabf5`,
     },
     WARNING: {
-        MAIN: `#ffffff`,
-        DARK: `#ffffff`,
-        LIGHT: `#ffffff`,
+        MAIN: `#bdbdbd`,
+        DARK: `#bdbdbd`,
+        LIGHT: `#bdbdbd`,
+    },
+    INFO: {
+        MAIN: `#000000`,
+        DARK: `#000000`,
+        LIGHT: `#000000`,
     }
 }

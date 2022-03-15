@@ -30,6 +30,11 @@ const theme = createTheme({
     dark: siteTheme.WARNING.DARK,
     light: siteTheme.WARNING.LIGHT,
   },
+  info: {
+    main: siteTheme.INFO.MAIN,
+    dark: siteTheme.INFO.DARK,
+    light: siteTheme.INFO.LIGHT,
+  },
   },
 });
 

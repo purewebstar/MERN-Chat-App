@@ -9,12 +9,13 @@ import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import IconButton from '@mui/material/IconButton';
 import ChatRoundedIcon from '@mui/icons-material/ChatRounded';
-import ContactsRoundedIcon from '@mui/icons-material/ContactsRounded';
+import GroupRoundedIcon from '@mui/icons-material/GroupRounded';
 import NotificationsRoundedIcon from '@mui/icons-material/NotificationsRounded';
-import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
+import OnlinePredictionRoundedIcon from '@mui/icons-material/OnlinePredictionRounded';
 import PhonelinkSetupRoundedIcon from '@mui/icons-material/PhonelinkSetupRounded';
 import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
+import ForumIcon from '@mui/icons-material/Forum';
 
 const Bottombar = ({}) => {
     const[active, setActive] = React.useState(0);
@@ -40,22 +41,22 @@ const Bottombar = ({}) => {
           }}
           >
             <IconButton onClick={handleActive}>
-                <ChatRoundedIcon color={active==0?`secondary`:`warning`} sx={{ fontSize: 25 }} id={0}/>
+              <ForumIcon color={active==0?`secondary`:`warning`} sx={{ fontSize: 25 }} id={0}/>
             </IconButton>
             <IconButton onClick={handleActive}>
-                <ContactsRoundedIcon color={active==1?`secondary`:`warning`} sx={{ fontSize: 25 }} id={1}/>
+              <GroupRoundedIcon color={active==1?`secondary`:`warning`} sx={{ fontSize: 25 }} id={1}/>
             </IconButton> 
             <IconButton  onClick={handleActive}>
-                <AccountCircleRoundedIcon color={active==2?`secondary`:`warning`} sx={{ fontSize: 25 }} id={2}/>
+              <OnlinePredictionRoundedIcon color={active==2?`secondary`:`warning`} sx={{ fontSize: 25 }} id={2}/>
             </IconButton>
-            <IconButton onClick={handleActive}>
-                <NotificationsRoundedIcon color={active==3?`secondary`:`warning`} sx={{ fontSize: 25 }} id={3}/>
+            <IconButton onClick={handleActive}> 
+              <NotificationsRoundedIcon color={active==3?`secondary`:`warning`} sx={{ fontSize: 25 }} id={3}/>
             </IconButton> 
             <IconButton onClick={handleActive}>
-                <PhonelinkSetupRoundedIcon color={active==4?`secondary`:`warning`}  sx={{ fontSize: 25 }} id={4} />
+              <PhonelinkSetupRoundedIcon color={active==4?`secondary`:`warning`}  sx={{ fontSize: 25 }} id={4} />
             </IconButton>
             <IconButton>
-               <Avatar alt="A" src="/static/images/avatar/1.jpg" sx={{width: 30, height:30}} />
+              <Avatar alt="A" src="/static/images/avatar/1.jpg" sx={{width: 30, height:30}} />
             </IconButton>
           </Box>
         </AppBar>
