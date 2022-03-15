@@ -11,7 +11,7 @@
 
 const mongoose = require('mongoose');
 
-const FriendsSchema = mongoose.Schema({
+const FriendsSchema = mongoose.Schema({ 
     user: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User'
