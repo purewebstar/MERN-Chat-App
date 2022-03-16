@@ -21,9 +21,9 @@ export const defaultTheme = {
         LIGHT: `#bdbdbd`,
     },
     INFO: {
-        MAIN: `#ffffff`,
-        DARK: `#ffffff`,
-        LIGHT: `#ffffff`,
+        MAIN: `rgba(0, 0, 0, 0.1)`,
+        DARK: `rgba(0, 0, 0, 0.1)`,
+        LIGHT: `rgba(0, 0, 0, 0.1)`,
     },
 }
 
@@ -44,8 +44,8 @@ export const chillTheme = {
         LIGHT: `#bdbdbd`,
     },
     INFO: {
-        MAIN: `#000000`,
-        DARK: `#000000`,
-        LIGHT: `#000000`,
+        MAIN: `rgba(0, 0, 0, 0.1)`,
+        DARK: `rgba(0, 0, 0, 0.1)`,
+        LIGHT: `rgba(0, 0, 0, 0.1)`,
     }
 }

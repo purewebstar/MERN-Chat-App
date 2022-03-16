@@ -55,7 +55,7 @@ app.use(passport.initialize());
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(function(err, req, res, next) {
+app.use(function(err, req, res, next) { 
   res.status(err.status || 500).json(err);
 });
 server.listen(PORT, function() {

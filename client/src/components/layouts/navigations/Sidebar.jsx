@@ -115,7 +115,7 @@ const Sidebar = props => {
 
   return (
   <>
-  <Box sx={{ display: { sm: 'none', md: 'flex' } }}>
+  <Box sx={{ display: { sm: 'none', md: 'flex' }, backgroundColor: `info.light` }}>
     <Box
     component="nav" 
     sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
@@ -133,7 +133,7 @@ const Sidebar = props => {
     </Box>
     
     <Box
-    component="main"
+    component="main" 
     sx={{
     backgroundColor: `primary.dark`,
     height: (windowSize.height),
@@ -141,10 +141,10 @@ const Sidebar = props => {
     display: { sm: 'none', md: 'block' },
     '& .MuiDrawer-paper': { width: sideDrawerWidth },
     }}
-    >
+    >   
     {
     /**
-     *  SIDE CONTENT will load On click 
+     *  SIDE CONTENT will load On click  
      */
     }
     <SideContent 
